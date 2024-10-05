@@ -1,5 +1,7 @@
 # RabbitMQ
 
+<a href="https://youtu.be/hfUIWe1tK8E" title="rabbitmq-intro"><img src="https://i.ytimg.com/vi/hfUIWe1tK8E/hqdefault.jpg" width="20%" alt="rabbitmq-intro" /></a> 
+
 Docker image over [here](https://hub.docker.com/_/rabbitmq)
 ```
 # run a standalone instance
@@ -29,9 +31,11 @@ docker exec -it rabbit-manager rabbitmqctl cluster_status
 
 # Enable Statistics
 
+```
 docker exec -it rabbit-1 rabbitmq-plugins enable rabbitmq_management
 docker exec -it rabbit-2 rabbitmq-plugins enable rabbitmq_management
 docker exec -it rabbit-3 rabbitmq-plugins enable rabbitmq_management
+```
 
 # Message Publisher
 
